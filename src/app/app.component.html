@@ -1,4 +1,7 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+
+<app-sorting
+[sortOptions]="sorts"
+[selectedOption]="byDate"
+placeholder="test"
+(sortListEvent)="sortChange($event)"
+></app-sorting>
